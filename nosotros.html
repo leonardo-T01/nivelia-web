@@ -9,14 +9,22 @@
 </head>
 <body>
 
-  <header class="navbar">
+    <header class="navbar">
     <a href="index.html" class="logo-container">
       <img src="assets/images/logo_nivelia.png" alt="NIVELIA S.A.S." class="logo-img" onerror="this.style.display='none'">
     </a>
-    <nav>
+
+    <!-- Botón Hamburguesa (visible solo en móvil) -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-container" id="nav-container">
       <ul class="nav-links">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html" class="active">Nosotros</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="servicios.html">Servicios y Soluciones</a></li>
         <li><a href="cargos.html">Cargos</a></li>
         <li><a href="documentos.html">Documentación</a></li>
