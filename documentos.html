@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro de Documentación y Transparencia | NIVELIA S.A.S.</title>
+  <!-- FAVICON AGREGADO -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+      <header class="navbar">
+    <a href="index.html" class="logo-container">
+      <img src="assets/images/logo_nivelia.png" alt="NIVELIA S.A.S." class="logo-img" onerror="this.style.display='none'">
+    </a>
+
+    <!-- Botón Hamburguesa (visible solo en móvil) -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-container" id="nav-container">
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios y Soluciones</a></li>
+        <li><a href="cargos.html">Cargos</a></li>
+        <li><a href="documentos.html">Documentación</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section style="padding: 10rem 8% 3rem; text-align: center;">
+    <span style="color: var(--primary-cyan); font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Gobierno Corporativo y Transparencia</span>
+    <h1 style="font-size: 3rem; margin-top: 0.5rem;">Centro de Documentación Oficial</h1>
+    <p style="color: var(--text-muted); max-width: 750px; margin: 1rem auto 0;">
+      Acceda a los reglamentos corporativos y documentos técnicos de proyectos de NIVELIA S.A.S. para descarga directa.
+    </p>
+  </section>
+
+  <section style="padding: 2rem 8%;">
+    <h2 style="color: var(--primary-cyan); border-bottom: 1px solid var(--bg-card-border); padding-bottom: 0.8rem; margin-bottom: 2rem;">
+      📄 Documentos e Informes Públicos
+    </h2>
+
+    <div class="grid-cards">
+
+      <!-- Doc 1: Reglamento Interno de Trabajo -->
+      <div class="card">
+        <span class="badge badge-orange">RIT-NIV-001</span>
+        <h3 style="margin-top: 0.8rem;">Reglamento Interno de Trabajo</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0.5rem 0 1.5rem;">
+          Disposiciones generales, jornadas, derechos, obligaciones, seguridad e higiene laboral para colaboradores.
+        </p>
+        <div style="display: flex; gap: 0.8rem;">
+          <a href="assets/docs/RIT-NIV-001_Reglamento_Interno.pdf" download class="btn-secondary btn-small">Descargar PDF</a>
+        </div>
+      </div>
+
+      <!-- Doc 2: Matriz RACI -->
+      <div class="card">
+        <span class="badge badge-violet">NIV-MAT-002</span>
+        <h3 style="margin-top: 0.8rem;">Matriz RACI de Procesos</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0.5rem 0 1.5rem;">
+          Asignación sistemática de responsabilidades (Aprobador, Responsable, Consultado, Informado) por WBS.
+        </p>
+        <div style="display: flex; gap: 0.8rem;">
+          <a href="assets/docs/NIV-MAT-002_Matriz_RACI.xls" download class="btn-secondary btn-small">Descargar Excel (.xls)</a>
+        </div>
+      </div>
+
+      <!-- Doc 3: PM Canvas -->
+      <div class="card">
+        <span class="badge badge-cyan">PROYECTO-PMC</span>
+        <h3 style="margin-top: 0.8rem;">PM Canvas - Plataformas Antiinundación</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0.5rem 0 1.5rem;">
+          Matriz de diseño de proyecto: justificativos, arquitectura de subsistemas, riesgos y requisitos SMART.
+        </p>
+        <div style="display: flex; gap: 0.8rem;">
+          <a href="assets/docs/PROYECTO-PMC_Smart_Cross.pdf" download class="btn-secondary btn-small">Descargar PDF</a>
+        </div>
+      </div>
+
+      <!-- Doc 4: PESTEL -->
+      <div class="card">
+        <span class="badge badge-orange">PROYECTO-PESTEL</span>
+        <h3 style="margin-top: 0.8rem;">Análisis PESTEL - Plataformas Antiinundación</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0.5rem 0 1.5rem;">
+          Análisis del entorno político, económico, social, tecnológico, ecológico y legal para proyectos urbanos.
+        </p>
+        <div style="display: flex; gap: 0.8rem;">
+          <a href="assets/docs/PROYECTO-PESTEL_Smart_Cross.pptx" download class="btn-secondary btn-small">Descargar PPTX (.pptx)</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Nota informativa de documentos futuros -->
+    <div style="margin-top: 3rem; padding: 1.5rem; border-left: 4px solid var(--primary-cyan); background: var(--bg-card); border-radius: 8px;">
+      <p style="color: var(--text-muted); font-size: 0.9rem;">
+        <strong style="color: var(--primary-cyan);">📌 Próximamente:</strong> Los documentos <em>Parámetros Organizacionales (NIV-ORG-001)</em> y <em>Modelo de Nómina y Costos Laborales (NIV-RH-002)</em> estarán disponibles para descarga pública. Si requiere acceso anticipado, contáctenos a través del formulario.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div style="text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+      &copy; 2026 NIVELIA S.A.S. | Centro de Transparencia y Gobierno Corporativo | Bogotá D.C.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
