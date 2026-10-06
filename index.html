@@ -1,44 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIVELIA S.A.S. - Infraestructura Urbana Inteligente</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIVELIA S.A.S. | Infraestructura Urbana Inteligente</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>NIVELIA S.A.S.</h1>
-        <p>Soluciones de Infraestructura Urbana Inteligente</p>
-    </header>
+
+  <!-- Header con Logo PNG Transparente -->
+  <header class="navbar">
+    <a href="index.html" class="logo-container">
+      <img src="assets/images/logo-nivelia.png" alt="NIVELIA S.A.S. Logo" class="logo-img" onerror="this.style.display='none'">
+      <span class="logo-text">NIVELIA<span>.</span></span>
+    </a>
     <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#portafolio">Portafolio</a>
-        <a href="#contacto">Contacto</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios y Soluciones</a></li>
+            <li><a href="documentos.html">Documentación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
     </nav>
-    <main>
-        <section id="inicio">
-            <h2>Ingeniería, Tecnología y Sostenibilidad</h2>
-            <p>Especialistas en la integración de ingeniería civil, IoT y automatización urbana.</p>
-        </section>
-        <section id="nosotros">
-            <h2>Quiénes Somos</h2>
-            <p><strong>Misión:</strong> Diseñar, desarrollar e implementar soluciones de infraestructura urbana inteligente.</p>
-            <p><strong>Visión (2035):</strong> Ser referente en Colombia y Latinoamérica en infraestructura urbana inteligente.</p>
-        </section>
-        <section id="portafolio">
-            <h2>Nuestras Soluciones</h2>
-            <ul>
-                <li>Ingeniería Civil e Infraestructura</li>
-                <li>Tecnología e Innovación (IoT y Automatización)</li>
-                <li>Proyecto Destacado: Paso Peatonal Inteligente (Smart Cross)</li>
-                <li>Gestión Hídrica y Sostenibilidad</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 NIVELIA S.A.S. - Bogotá D.C., Colombia</p>
-    </footer>
+    <a href="contacto.html" class="btn-primary">Cotizar Proyecto</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section style="padding: 12rem 8% 5rem; text-align: center; background: radial-gradient(circle at center, rgba(0, 242, 254, 0.12) 0%, transparent 70%);">
+    <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.2;">
+      Infraestructura Urbana Inteligente <br><span style="color: var(--primary-cyan);">Ingeniería, Tecnología y Sostenibilidad</span>
+    </h1>
+    <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 800px; margin: 1.5rem auto 2.5rem;">
+      Integración multidisciplinaria de ingeniería civil, sistemas embebidos IoT, desarrollo de software y gestión ambiental para ciudades inteligentes y sostenibles.
+    </p>
+    <div style="display: flex; gap: 1rem; justify-content: center;">
+      <a href="#smart-cross" class="btn-primary">Proyecto Smart Cross</a>
+      <a href="nosotros.html" class="btn-secondary">Estructura Corporativa</a>
+    </div>
+  </section>
+
+  <!-- Sección Destacada: Sistema Smart Cross -->
+  <section id="smart-cross" style="padding: 4rem 8%;">
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <span style="color: var(--primary-orange); font-weight: 700; text-transform: uppercase;">Proyecto Flagship</span>
+      <h2 style="font-size: 2.5rem;">Smart Cross: Paso Peatonal Inteligente</h2>
+      <p style="color: var(--text-muted); max-width: 700px; margin: 0.5rem auto;">
+        Sistema integrado de protección peatonal, señalización LED dinámica y monitoreo en tiempo real mediante sensórica IoT y automatización.
+      </p>
+    </div>
+
+    <!-- Diagrama de Flujo del Sistema (Smart Cross) -->
+    <div class="flowchart-container">
+      <h3 style="color: var(--primary-cyan); text-align: center; margin-bottom: 2rem;">Diagrama de Flujo Operativo del Sistema</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; align-items: center;">
+        
+        <div class="flow-step">
+          <strong style="color: var(--primary-cyan);">1. Detección Peatonal</strong>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Sensores ópticos e infrarrojos detectan presencia en zona de espera.</p>
+        </div>
+
+        <div class="flow-arrow">➔</div>
+
+        <div class="flow-step">
+          <strong style="color: var(--primary-orange);">2. Procesamiento Edge / IoT</strong>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Unidad de control analiza tráfico y valida prioridad peatonal.</p>
+        </div>
+
+        <div class="flow-arrow">➔</div>
+
+        <div class="flow-step">
+          <strong style="color: var(--primary-violet);">3. Activación de Alertas</strong>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Encendido de balizas LED incrustadas y señalización sonora.</p>
+        </div>
+
+        <div class="flow-arrow">➔</div>
+
+        <div class="flow-step">
+          <strong style="color: var(--primary-cyan);">4. Telemetría y Registro</strong>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Transmisión de datos de aforo y eventos al servidor central.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Cronograma de Implementación (Timeline del Proyecto) -->
+    <div style="margin-top: 5rem;">
+      <h3 style="color: var(--primary-cyan); text-align: center; margin-bottom: 2rem;">Cronograma General de Implementación</h3>
+      <div class="timeline">
+        
+        <div class="timeline-item">
+          <div class="timeline-date">Fase 1 | Semanas 1 - 3</div>
+          <h4>Estudios Técnicos y Levantamiento Topográfico</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Evaluación de campo, aforos peatonales/vehiculares, análisis de conectividad eléctrica y estudio hidrológico de la zona.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Fase 2 | Semanas 4 - 7</div>
+          <h4>Diseño de Infraestructura y Desarrollo Hardware/Software</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Modelamiento estructural, programación de microcontroladores/PLC y configuración de plataforma de telemetría en la nube.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Fase 3 | Semanas 8 - 11</div>
+          <h4>Obra Civil, Canalización e Instalación Electrónica</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Corte y canalización de calzada, embebido de luminarias LED superficiales, montaje de tótems de señalización y sensores.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Fase 4 | Semanas 12 - 14</div>
+          <h4>Pruebas Operativas, Calibración y Puesta en Marcha</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Validación de tiempos de respuesta, pruebas de resistencia climática y recepción técnica del proyecto.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div style="text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+      &copy; 2026 NIVELIA S.A.S. | Código Documental: NIV-ORG-001 | Bogotá D.C., Colombia
+    </div>
+  </footer>
+
 </body>
 </html>

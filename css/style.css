@@ -1,0 +1,257 @@
+/* ==========================================================================
+   NIVELIA S.A.S. - Sistema de Estilos y Componentes Visuales
+   ========================================================================== */
+
+:root {
+  --bg-dark: #0b0f19;
+  --bg-card: rgba(22, 28, 45, 0.75);
+  --bg-card-border: rgba(255, 255, 255, 0.1);
+  --primary-cyan: #00f2fe;
+  --primary-orange: #ff6b00;
+  --primary-violet: #7f00ff;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: var(--font-family);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Header & Logo PNG Transparente */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 8%;
+  background: rgba(11, 15, 25, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--bg-card-border);
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  background: transparent; /* Fondo transparente asegurado */
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.3)); /* Resalta el PNG transparente */
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.logo-text span {
+  color: var(--primary-cyan);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: var(--primary-cyan);
+}
+
+/* Botones y Cards */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-cyan), var(--primary-violet));
+  color: #fff;
+  padding: 0.75rem 1.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 242, 254, 0.35);
+}
+
+.btn-secondary {
+  border: 1px solid var(--primary-cyan);
+  color: var(--primary-cyan);
+  padding: 0.75rem 1.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-secondary:hover {
+  background: rgba(0, 242, 254, 0.1);
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--bg-card-border);
+  padding: 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  transition: var(--transition);
+}
+
+.card:hover {
+  border-color: var(--primary-cyan);
+  transform: translateY(-4px);
+}
+
+/* Diagrama de Flujo CSS/SVG */
+.flowchart-container {
+  background: var(--bg-card);
+  border: 1px solid var(--bg-card-border);
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin: 3rem 0;
+}
+
+.flow-step {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--primary-cyan);
+  padding: 1.2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.flow-arrow {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--primary-orange);
+  margin: 0.5rem 0;
+}
+
+/* Cronograma / Timeline CSS */
+.timeline {
+  position: relative;
+  margin: 3rem 0;
+  padding-left: 2rem;
+  border-left: 2px solid var(--primary-cyan);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.6rem;
+  top: 0.2rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: var(--primary-orange);
+  border: 3px solid var(--bg-dark);
+}
+
+.timeline-date {
+  font-size: 0.85rem;
+  color: var(--primary-cyan);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Organigrama Estratégico */
+.org-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.org-node {
+  background: var(--bg-card);
+  border: 1px solid var(--primary-cyan);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 260px;
+}
+
+.org-node.level-1 { border-color: var(--primary-orange); font-weight: 700; }
+.org-node.level-2 { border-color: var(--primary-cyan); }
+.org-node.level-3 { border-color: var(--primary-violet); font-size: 0.95rem; }
+
+.org-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Tablas RACI */
+.table-responsive {
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+}
+
+th, td {
+  padding: 1rem;
+  border: 1px solid var(--bg-card-border);
+  text-align: left;
+}
+
+th {
+  background: rgba(0, 242, 254, 0.1);
+  color: var(--primary-cyan);
+}
+
+footer {
+  background: #060911;
+  border-top: 1px solid var(--bg-card-border);
+  padding: 4rem 8% 2rem;
+  margin-top: 5rem;
+}
