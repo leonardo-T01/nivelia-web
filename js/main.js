@@ -1,12 +1,10 @@
-// js/main.js - NIVELIA S.A.S.
+// js/main.js - NIVELIA S.A.S. Interactive UI Controller
 
 document.addEventListener('DOMContentLoaded', () => {
   
-  // 1. Marcar automáticamente el enlace 'active' en el menú según la página actual
+  // 1. Detección automática del menú activo
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  const navLinks = document.querySelectorAll('.nav-links a');
-
-  navLinks.forEach(link => {
+  document.querySelectorAll('.nav-links a').forEach(link => {
     if (link.getAttribute('href') === currentPage) {
       link.classList.add('active');
     } else {
@@ -14,24 +12,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 2. Manejo interactivo del formulario de Contacto
-  const contactForm = document.querySelector('form[action=""], section form');
-  if (contactForm && window.location.pathname.includes('contacto.html')) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('Requerimiento enviado exitosamente a la Dirección Comercial de NIVELIA S.A.S.');
-      contactForm.reset();
-    });
-  }
+  // 2. Control de Pestañas Interactivas (Tabs)
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const tabGroup = button.closest('.tabs-container');
+      const targetId = button.getAttribute('data-tab');
 
-  // 3. Manejo interactivo del formulario de Intranet
-  const intranetForm = document.querySelector('.card form');
-  if (intranetForm && window.location.pathname.includes('documentos.html')) {
-    intranetForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('Acceso Restringido: Sus credenciales han sido enviadas a la Dirección Administrativa para validación.');
-      intranetForm.reset();
+      tabGroup.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      tabGroup.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+      button.classList.add('active');
+      const targetContent = document.getElementById(targetId);
+      if (targetContent) targetContent.classList.add('active');
     });
-  }
+  });
+
+  // 3. Control de Acordeones (Políticas Corporativas)
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+  accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      item.classList.toggle('active');
+    });
+  });
+
+  // 4. Fallback dinámico de imágenes si no se cargan
+  document.querySelectorAll('img').forEach(img => {
+    img.addEventListener('error', function() {
+      if (this.classList.contains('logo-img')) {
+        this.style.display = 'none';
+      }
+    });
+  });
 
 });
