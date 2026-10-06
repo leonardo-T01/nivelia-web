@@ -1,15 +1,81 @@
-// js/main.js - NIVELIA S.A.S. Interactive UI Controller v2.0
+// js/main.js - NIVELIA S.A.S. Interactive UI Controller v3.0
+// Incluye: Menú Hamburguesa Móvil + Interactividad General
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // 1. Detección automática del menú activo
+  // ============ 0. MENÚ HAMBURGUESA MÓVIL ⭐ NUEVO ============
+  const menuToggle = document.getElementById('menu-toggle');
+  const navContainer = document.getElementById('nav-container');
+
+  console.log('🔍 Menú:', {
+    toggle: menuToggle ? '✅' : '❌',
+    nav: navContainer ? '✅' : '❌'
+  });
+
+  if (menuToggle && navContainer) {
+
+    // Función para abrir/cerrar
+    function toggleMenu() {
+      const isOpening = !navContainer.classList.contains('active');
+      menuToggle.classList.toggle('active');
+      navContainer.classList.toggle('active');
+      menuToggle.setAttribute('aria-expanded', isOpening ? 'true' : 'false');
+      document.body.style.overflow = isOpening ? 'hidden' : '';
+      console.log('🍔 Menú:', isOpening ? 'ABIERTO' : 'CERRADO');
+    }
+
+    // Función para cerrar
+    function closeMenu() {
+      menuToggle.classList.remove('active');
+      navContainer.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    // 1. Click en el botón hamburguesa
+    menuToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleMenu();
+    });
+
+    // 2. Cerrar al hacer click en un enlace
+    navContainer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    // 3. Cerrar al hacer click fuera
+    document.addEventListener('click', (e) => {
+      if (navContainer.classList.contains('active') &&
+          !navContainer.contains(e.target) &&
+          !menuToggle.contains(e.target)) {
+        closeMenu();
+      }
+    });
+
+    // 4. Cerrar con tecla Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
+    });
+
+    // 5. Cerrar al redimensionar a desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 968) closeMenu();
+    });
+
+    console.log('✅ Menú hamburguesa inicializado');
+  } else {
+    console.warn('⚠️ No se encontró el menú hamburguesa. Verifica el HTML.');
+  }
+
+  // ============ 1. DETECCIÓN AUTOMÁTICA DEL MENÚ ACTIVO ============
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a').forEach(link => {
     if (link.getAttribute('href') === currentPage) link.classList.add('active');
     else link.classList.remove('active');
   });
 
-  // 2. Control de Pestañas Interactivas (Tabs)
+  // ============ 2. CONTROL DE PESTAÑAS INTERACTIVAS (TABS) ============
   document.querySelectorAll('.tab-btn').forEach(button => {
     button.addEventListener('click', () => {
       const tabGroup = button.closest('.tabs-container');
@@ -23,12 +89,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 3. Acordeones
+  // ============ 3. ACORDEONES ============
   document.querySelectorAll('.accordion-header').forEach(header => {
     header.addEventListener('click', () => header.parentElement.classList.toggle('active'));
   });
 
-  // 4. Fallback de imágenes
+  // ============ 4. FALLBACK DE IMÁGENES ============
   document.querySelectorAll('img').forEach(img => {
     img.addEventListener('error', function() {
       if (this.classList.contains('logo-img')) this.style.display = 'none';
@@ -42,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 5. Renderizado de Cargos (solo si estamos en cargos.html)
+  // ============ 5. RENDERIZADO DE CARGOS (solo en cargos.html) ============
   if (document.getElementById('cargos-grid') && typeof CARGOS_DATA !== 'undefined') {
     renderCargos(CARGOS_DATA);
     document.getElementById('total-cargos').textContent = CARGOS_DATA.length;
@@ -70,7 +136,7 @@ function renderCargos(cargos) {
     return;
   }
 
-  cargos.forEach((c, index) => {
+  cargos.forEach((c) => {
     const card = document.createElement('div');
     card.className = 'cargo-card';
     card.setAttribute('data-index', CARGOS_DATA.indexOf(c));
