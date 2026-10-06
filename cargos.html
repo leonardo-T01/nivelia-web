@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estructura de Cargos y Perfiles | NIVELIA S.A.S.</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo-container">
+      <img src="assets/images/logo-nivelia.png" alt="NIVELIA S.A.S." class="logo-img" onerror="this.style.display='none'">
+      <span class="logo-text">NIVELIA<span>.</span></span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios y Soluciones</a></li>
+        <li><a href="cargos.html" class="active">Cargos</a></li>
+        <li><a href="documentos.html">Documentación</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="contacto.html" class="btn-primary">Cotizar Proyecto</a>
+  </header>
+
+  <section style="padding: 10rem 8% 3rem; text-align: center;">
+    <span class="badge badge-cyan">Sección 7 y 8 · NIV-ORG-001</span>
+    <h1 style="font-size: 3rem; margin-top: 0.5rem;">Estructura de Cargos y Perfiles</h1>
+    <p style="color: var(--text-muted); max-width: 850px; margin: 1rem auto 0;">
+      Directorio completo de los <strong id="total-cargos">60+</strong> cargos definidos en los Parámetros Organizacionales de NIVELIA S.A.S. Filtre por área para consultar propósito, formación, funciones y modalidad de vinculación.
+    </p>
+  </section>
+
+  <section style="padding: 2rem 8%;">
+    <!-- Filtros por Área -->
+    <div class="cargos-filtros">
+      <button class="filtro-btn active" data-filtro="all">Todos los Cargos</button>
+      <button class="filtro-btn" data-filtro="Gobierno">Gobierno</button>
+      <button class="filtro-btn" data-filtro="Gerencia">Gerencia</button>
+      <button class="filtro-btn" data-filtro="Ingeniería">Ingeniería</button>
+      <button class="filtro-btn" data-filtro="Tecnología">Tecnología</button>
+      <button class="filtro-btn" data-filtro="Sostenibilidad">Sostenibilidad</button>
+      <button class="filtro-btn" data-filtro="Comercial">Comercial</button>
+      <button class="filtro-btn" data-filtro="Administrativa">Administrativa</button>
+      <button class="filtro-btn" data-filtro="Operaciones">Operaciones</button>
+      <button class="filtro-btn" data-filtro="Servicios">Servicios</button>
+      <button class="filtro-btn" data-filtro="Auditoría">Auditoría</button>
+    </div>
+
+    <!-- Grid de Cargos -->
+    <div class="cargos-grid" id="cargos-grid">
+      <!-- Se llena dinámicamente con JavaScript -->
+    </div>
+  </section>
+
+  <!-- Modal de Perfil -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-content" id="modal-content">
+      <button class="modal-close" onclick="cerrarModal()">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div style="text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+      &copy; 2026 NIVELIA S.A.S. | Estructura de Cargos · NIV-ORG-001 | Bogotá D.C.
+    </div>
+  </footer>
+
+  <script src="js/cargos-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

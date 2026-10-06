@@ -10,7 +10,7 @@
 
   <header class="navbar">
     <a href="index.html" class="logo-container">
-      <img src="assets/images/logo-nivelia.png" alt="NIVELIA S.A.S." class="logo-img">
+      <img src="assets/images/logo-nivelia.png" alt="NIVELIA S.A.S." class="logo-img" onerror="this.style.display='none'">
       <span class="logo-text">NIVELIA<span>.</span></span>
     </a>
     <nav>
@@ -18,6 +18,7 @@
         <li><a href="index.html">Inicio</a></li>
         <li><a href="nosotros.html" class="active">Nosotros</a></li>
         <li><a href="servicios.html">Servicios y Soluciones</a></li>
+        <li><a href="cargos.html">Cargos</a></li>
         <li><a href="documentos.html">Documentación</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
@@ -25,121 +26,428 @@
     <a href="contacto.html" class="btn-primary">Cotizar Proyecto</a>
   </header>
 
-  <section style="padding: 10rem 8% 3rem;">
-    <div style="text-align: center; margin-bottom: 3rem;">
-      <span class="badge badge-cyan">Direccionamiento Estratégico</span>
-      <h1 style="font-size: 3rem; margin-top: 0.5rem;">Identidad y Gobierno Corporativo</h1>
-    </div>
+  <!-- Encabezado -->
+  <section style="padding: 10rem 8% 3rem; text-align: center;">
+    <span class="badge badge-cyan">Direccionamiento Estratégico · Sección 3</span>
+    <h1 style="font-size: 3rem; margin-top: 0.5rem;">Identidad y Gobierno Corporativo</h1>
+    <p style="color: var(--text-muted); max-width: 750px; margin: 1rem auto 0;">
+      Conozca la esencia, los valores y las políticas que rigen la operación de NIVELIA S.A.S.
+    </p>
+  </section>
 
-    <!-- Misión y Visión -->
+  <!-- 3.1 Misión / 3.2 Visión -->
+  <section class="section-padding">
     <div class="grid-cards">
       <div class="card" style="border-left: 4px solid var(--primary-cyan);">
-        <h2 style="color: var(--primary-cyan);">3.1 Misión</h2>
-        <p style="margin-top: 1rem; color: var(--text-main);">
+        <span class="badge badge-cyan">3.1 Misión</span>
+        <h2 style="color: var(--primary-cyan); margin-top: 0.8rem;">Nuestra Misión</h2>
+        <p style="margin-top: 1rem;">
           NIVELIA S.A.S. diseña, desarrolla e implementa soluciones de infraestructura urbana inteligente mediante la integración de ingeniería, tecnología, automatización y sostenibilidad, con el propósito de atender necesidades reales de las ciudades, mejorar la seguridad y accesibilidad de las personas y contribuir al desarrollo de entornos urbanos más resilientes, eficientes y sostenibles.
         </p>
       </div>
 
       <div class="card" style="border-left: 4px solid var(--primary-orange);">
-        <h2 style="color: var(--primary-orange);">3.2 Visión 2035</h2>
-        <p style="margin-top: 1rem; color: var(--text-main);">
+        <span class="badge badge-orange">3.2 Visión 2035</span>
+        <h2 style="color: var(--primary-orange); margin-top: 0.8rem;">Nuestra Visión</h2>
+        <p style="margin-top: 1rem;">
           Para el año 2035, NIVELIA S.A.S. será reconocida en Colombia y Latinoamérica como una empresa referente en infraestructura urbana inteligente, destacándose por su innovación tecnológica, excelencia técnica, confiabilidad, sostenibilidad y capacidad para desarrollar soluciones escalables que contribuyan a transformar las ciudades.
         </p>
       </div>
     </div>
+  </section>
 
-    <!-- Objetivos Estratégicos (Sección 3.5 del documento) -->
-    <div style="margin-top: 4rem;">
-      <h3 style="color: var(--primary-cyan); margin-bottom: 1.5rem;">3.5 Objetivos Estratégicos Corporativos</h3>
-      <div class="grid-cards">
-        <div class="card"><p>1. Desarrollar soluciones de infraestructura urbana que respondan a necesidades reales del entorno.</p></div>
-        <div class="card"><p>2. Fortalecer las capacidades de innovación, investigación y desarrollo tecnológico.</p></div>
-        <div class="card"><p>3. Garantizar estándares de calidad, seguridad y confiabilidad en productos y servicios.</p></div>
-        <div class="card"><p>4. Promover prácticas sostenibles y una gestión responsable de los recursos.</p></div>
-        <div class="card"><p>5. Desarrollar relaciones comerciales con entidades públicas y privadas.</p></div>
-        <div class="card"><p>6. Fortalecer la capacidad de expansión de NIVELIA hacia diferentes ciudades y mercados.</p></div>
+  <!-- 3.3 Valores Corporativos (NUEVO) -->
+  <section class="section-padding">
+    <div style="text-align: center; margin-bottom: 1rem;">
+      <span class="badge badge-violet">3.3 Valores Corporativos</span>
+      <h2 style="font-size: 2.5rem; margin-top: 0.5rem;">Los Valores que nos Definen</h2>
+    </div>
+    <div class="valores-grid">
+      <div class="valor-card">
+        <div class="valor-icon">💡</div>
+        <h4>Innovación</h4>
+        <p>Promover nuevas soluciones que respondan a necesidades reales de las ciudades.</p>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">🌱</div>
+        <h4>Sostenibilidad</h4>
+        <p>Considerar los impactos ambientales, sociales y económicos de las actividades de la organización.</p>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">🛡️</div>
+        <h4>Seguridad</h4>
+        <p>Priorizar la protección de trabajadores, usuarios, clientes y comunidades.</p>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">🤝</div>
+        <h4>Trabajo en Equipo</h4>
+        <p>Promover la colaboración entre áreas y disciplinas.</p>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">⭐</div>
+        <h4>Excelencia</h4>
+        <p>Buscar altos estándares de calidad, desempeño y confiabilidad.</p>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">🌍</div>
+        <h4>Compromiso Social</h4>
+        <p>Orientar las soluciones hacia la generación de beneficios para la sociedad.</p>
       </div>
     </div>
+  </section>
 
-    <!-- Organigrama e Imagen Oficial -->
-    <div style="margin-top: 5rem;">
-      <div style="text-align: center;">
-        <span class="badge badge-violet">Estructura Jerárquica</span>
-        <h2 style="font-size: 2.5rem; margin-top: 0.5rem;">5.3 Organigrama General</h2>
-      </div>
-
-      <div class="diagram-viewer">
-        <img src="assets/images/organigrama.jpg" alt="Organigrama General NIVELIA S.A.S." class="diagram-img">
-      </div>
-    </div>
-
-    <!-- Estructura Jerárquica WBS (Sección 12 del Documento) -->
-    <div style="margin-top: 5rem;">
-      <h2 style="color: var(--primary-cyan); text-align: center;">12. Estructura Jerárquica Organizacional (WBS)</h2>
-      <p style="text-align: center; color: var(--text-muted); margin-top: 0.5rem;">
-        Descomposición sistemática desde el Nivel 0 (Organización) hasta el Nivel 6 (Líneas operativas y auxiliares).
+  <!-- 3.4 Objetivo General y 3.5 Objetivos Estratégicos -->
+  <section class="section-padding">
+    <div class="card" style="border: 1px solid var(--primary-cyan); margin-bottom: 3rem;">
+      <span class="badge badge-cyan">3.4 Objetivo General</span>
+      <p style="margin-top: 1rem; font-size: 1.05rem;">
+        Consolidar a NIVELIA S.A.S. como una empresa especializada en el desarrollo de soluciones de infraestructura urbana inteligente, mediante la integración de ingeniería, tecnología, innovación y sostenibilidad.
       </p>
+    </div>
 
-      <div class="wbs-tree">
-        <div class="wbs-card"><span class="wbs-code">1.0</span><h4>Junta Directiva</h4><p style="font-size:0.8rem; color:var(--text-muted);">Gobierno Corporativo</p></div>
-        <div class="wbs-card"><span class="wbs-code">1.1</span><h4>Auditor Interno</h4><p style="font-size:0.8rem; color:var(--text-muted);">Auditoría Independiente</p></div>
-        <div class="wbs-card"><span class="wbs-code">2.0</span><h4>Gerente General</h4><p style="font-size:0.8rem; color:var(--text-muted);">Gerencia General</p></div>
-        <div class="wbs-card"><span class="wbs-code">2.1</span><h4>Dir. Ingeniería Civil</h4><p style="font-size:0.8rem; color:var(--text-muted);">Infraestructura Física</p></div>
-        <div class="wbs-card"><span class="wbs-code">2.2</span><h4>Dir. Tecnología e Innovación</h4><p style="font-size:0.8rem; color:var(--text-muted);">Sistemas e IoT</p></div>
-        <div class="wbs-card"><span class="wbs-code">2.3</span><h4>Dir. Sostenibilidad</h4><p style="font-size:0.8rem; color:var(--text-muted);">Gestión Ambiental</p></div>
-        <div class="wbs-card"><span class="wbs-code">2.4</span><h4>Dir. Comercial y Mercado</h4><p style="font-size:0.8rem; color:var(--text-muted);">Licitaciones y B2B</p></div>
-        <div class="wbs-card"><span class="wbs-code">2.5</span><h4>Dir. Administrativa y Fin.</h4><p style="font-size:0.8rem; color:var(--text-muted);">Recursos y Talento</p></div>
-        <div class="wbs-card"><span class="wbs-code">2.6</span><h4>Dir. de Operaciones</h4><p style="font-size:0.8rem; color:var(--text-muted);">Montaje y Campo</p></div>
-        <div class="wbs-card"><span class="wbs-code">2.7</span><h4>Dir. Innovación y Negocios</h4><p style="font-size:0.8rem; color:var(--text-muted);">I+D y Escalabilidad</p></div>
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <span class="badge badge-orange">3.5 Objetivos Estratégicos</span>
+      <h2 style="font-size: 2rem; margin-top: 0.5rem;">Objetivos Estratégicos Corporativos</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>1. Soluciones Reales</h4>
+        <p>Desarrollar soluciones de infraestructura urbana que respondan a necesidades reales del entorno.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>2. Innovación e I+D</h4>
+        <p>Fortalecer las capacidades de innovación, investigación y desarrollo tecnológico.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>3. Calidad y Seguridad</h4>
+        <p>Garantizar estándares de calidad, seguridad y confiabilidad en productos y servicios.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>4. Sostenibilidad</h4>
+        <p>Promover prácticas sostenibles y una gestión responsable de los recursos.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>5. Alianzas Comerciales</h4>
+        <p>Desarrollar relaciones comerciales con entidades públicas y privadas.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>6. Expansión</h4>
+        <p>Fortalecer la capacidad de expansión de NIVELIA hacia diferentes ciudades y mercados.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>7. Mejora Continua</h4>
+        <p>Consolidar una estructura organizacional eficiente y orientada a la mejora continua.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Estructura Organizacional -->
+  <section class="section-padding">
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <span class="badge badge-violet">Sección 5</span>
+      <h2 style="font-size: 2.5rem; margin-top: 0.5rem;">Estructura Organizacional</h2>
+      <p style="color: var(--text-muted); max-width: 750px; margin: 0.5rem auto;">
+        NIVELIA S.A.S. adopta una estructura jerárquica con niveles diferenciados de autoridad, coordinación, ejecución y apoyo.
+      </p>
+    </div>
+
+    <div class="grid-cards">
+      <div class="card">
+        <span class="badge badge-violet">Nivel Estratégico</span>
+        <h3 style="margin-top: 0.8rem; color: var(--primary-violet);">Gobierno Corporativo</h3>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">Responsable del gobierno corporativo y del direccionamiento general.</p>
+        <ul style="margin-top: 1rem; list-style: none; padding: 0;">
+          <li style="padding: 0.3rem 0; color: var(--text-main);">▸ Junta Directiva</li>
+          <li style="padding: 0.3rem 0; color: var(--text-main);">▸ Gerente General</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="badge badge-cyan">Nivel Directivo</span>
+        <h3 style="margin-top: 0.8rem; color: var(--primary-cyan);">Direcciones Funcionales</h3>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">Responsable de dirigir las principales áreas funcionales.</p>
+        <ul style="margin-top: 1rem; list-style: none; padding: 0; font-size: 0.9rem;">
+          <li style="padding: 0.3rem 0;">▸ Ingeniería Civil e Infraestructura</li>
+          <li style="padding: 0.3rem 0;">▸ Tecnología e Innovación</li>
+          <li style="padding: 0.3rem 0;">▸ Sostenibilidad y Gestión Ambiental</li>
+          <li style="padding: 0.3rem 0;">▸ Comercial y Mercado</li>
+          <li style="padding: 0.3rem 0;">▸ Administrativa y Financiera</li>
+          <li style="padding: 0.3rem 0;">▸ Operaciones</li>
+          <li style="padding: 0.3rem 0;">▸ Innovación y Desarrollo de Negocios</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="badge badge-orange">Nivel Táctico y Profesional</span>
+        <h3 style="margin-top: 0.8rem; color: var(--primary-orange);">Coordinación y Ejecución Especializada</h3>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">Coordinan procesos y ejecutan actividades profesionales.</p>
+        <ul style="margin-top: 1rem; list-style: none; padding: 0; font-size: 0.9rem;">
+          <li style="padding: 0.3rem 0;">▸ Coordinadores</li>
+          <li style="padding: 0.3rem 0;">▸ Profesionales</li>
+          <li style="padding: 0.3rem 0;">▸ Especialistas</li>
+          <li style="padding: 0.3rem 0;">▸ Analistas</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="badge badge-green">Nivel Técnico y Operativo</span>
+        <h3 style="margin-top: 0.8rem; color: var(--primary-green);">Ejecución y Soporte</h3>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">Ejecutan actividades técnicas, operativas y de soporte.</p>
+        <ul style="margin-top: 1rem; list-style: none; padding: 0; font-size: 0.9rem;">
+          <li style="padding: 0.3rem 0;">▸ Supervisores de campo</li>
+          <li style="padding: 0.3rem 0;">▸ Técnicos</li>
+          <li style="padding: 0.3rem 0;">▸ Auxiliares</li>
+          <li style="padding: 0.3rem 0;">▸ Personal operativo y administrativo</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="badge badge-orange">Función de Control</span>
+        <h3 style="margin-top: 0.8rem; color: var(--primary-orange);">Auditoría Interna</h3>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">Función independiente que reporta a la Junta Directiva para evaluación, control y seguimiento.</p>
       </div>
     </div>
 
-    <!-- Políticas Corporativas (Sección 10 del Documento en Acordeón) -->
-    <div style="margin-top: 5rem;">
-      <h2 style="color: var(--primary-cyan); text-align: center; margin-bottom: 2rem;">10. Políticas Corporativas de la Empresa</h2>
+    <!-- 5.3 Organigrama -->
+    <div style="text-align: center; margin-top: 4rem;">
+      <span class="badge badge-cyan">5.3 Organigrama General</span>
+      <h3 style="font-size: 1.8rem; margin-top: 0.5rem;">Estructura Jerárquica y Directiva</h3>
+    </div>
 
-      <div class="accordion-item">
-        <div class="accordion-header">
-          <span>NIV-POL-001 | Política de Gobierno Corporativo, Ética e Integridad</span>
-          <span class="accordion-icon">▼</span>
-        </div>
-        <div class="accordion-content">
-          <p><strong>Objetivo:</strong> Establecer principios de integridad, transparencia y comportamiento ético en todas las decisiones corporativas.</p>
-          <p style="margin-top: 0.5rem; color: var(--text-muted);"><strong>Principios:</strong> Integridad, transparencia, responsabilidad, imparcialidad y confidencialidad.</p>
-        </div>
-      </div>
+    <div class="diagram-viewer">
+      <img src="assets/images/organigrama.jpg" alt="Organigrama General NIVELIA S.A.S." class="diagram-img" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>📊 Organigrama — Consulte la sección 5.3 del documento NIV-ORG-001</div>'">
+    </div>
 
-      <div class="accordion-item">
-        <div class="accordion-header">
-          <span>NIV-POL-002 | Política de Calidad y Excelencia Operacional</span>
-          <span class="accordion-icon">▼</span>
+    <!-- 5.3 Descripción de las Direcciones -->
+    <div style="margin-top: 4rem;">
+      <h3 style="color: var(--primary-cyan); text-align: center; margin-bottom: 2rem;">5.3 Descripción de las Direcciones</h3>
+      <div class="grid-cards">
+        <div class="proceso-card">
+          <h4>🏗️ Dirección de Ingeniería Civil e Infraestructura</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.8rem;"><strong>Propósito:</strong> Dirigir el desarrollo técnico de las soluciones físicas de NIVELIA.</p>
+          <ul class="proceso-list">
+            <li>Ingeniería y diseño</li>
+            <li>Estudios técnicos</li>
+            <li>Infraestructura</li>
+            <li>Supervisión</li>
+            <li>Calidad técnica</li>
+          </ul>
         </div>
-        <div class="accordion-content">
-          <p><strong>Objetivo:</strong> Garantizar que productos y servicios cumplan con los requisitos técnicos, contractuales y normativos.</p>
+        <div class="proceso-card">
+          <h4>💻 Dirección de Tecnología e Innovación</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.8rem;"><strong>Propósito:</strong> Desarrollar y administrar las capacidades tecnológicas y digitales.</p>
+          <ul class="proceso-list">
+            <li>Software</li>
+            <li>Automatización</li>
+            <li>IoT</li>
+            <li>Sensores</li>
+            <li>Integración tecnológica</li>
+            <li>Seguridad tecnológica</li>
+          </ul>
         </div>
-      </div>
-
-      <div class="accordion-item">
-        <div class="accordion-header">
-          <span>NIV-POL-003 | Política de Seguridad y Salud en el Trabajo (SST)</span>
-          <span class="accordion-icon">▼</span>
+        <div class="proceso-card">
+          <h4>🌿 Dirección de Sostenibilidad y Gestión Ambiental</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.8rem;"><strong>Propósito:</strong> Garantizar que las actividades incorporen criterios ambientales.</p>
+          <ul class="proceso-list">
+            <li>Gestión ambiental</li>
+            <li>Residuos</li>
+            <li>Gestión hídrica</li>
+            <li>Eficiencia energética</li>
+            <li>Indicadores ambientales</li>
+          </ul>
         </div>
-        <div class="accordion-content">
-          <p><strong>Objetivo:</strong> Prevenir accidentes, lesiones y condiciones inseguras en actividades administrativas y operativas de campo.</p>
+        <div class="proceso-card">
+          <h4>📈 Dirección Comercial y Mercado</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.8rem;"><strong>Propósito:</strong> Desarrollar mercados, clientes y oportunidades de negocio.</p>
+          <ul class="proceso-list">
+            <li>Investigación de mercado</li>
+            <li>Ventas</li>
+            <li>Marketing</li>
+            <li>Licitaciones</li>
+            <li>Relación con clientes</li>
+          </ul>
         </div>
-      </div>
-
-      <div class="accordion-item">
-        <div class="accordion-header">
-          <span>NIV-POL-006 | Política de Seguridad de la Información y Ciberseguridad</span>
-          <span class="accordion-icon">▼</span>
+        <div class="proceso-card">
+          <h4>💼 Dirección Administrativa y Financiera</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.8rem;"><strong>Propósito:</strong> Administrar los recursos financieros, administrativos y humanos.</p>
+          <ul class="proceso-list">
+            <li>Finanzas</li>
+            <li>Contabilidad</li>
+            <li>Talento humano</li>
+            <li>Compras</li>
+            <li>Gestión jurídica y documental</li>
+          </ul>
         </div>
-        <div class="accordion-content">
-          <p><strong>Objetivo:</strong> Proteger activos digitales, datos telemétricos, plataformas IoT y propiedad intelectual frente a vulnerabilidades.</p>
+        <div class="proceso-card">
+          <h4>⚙️ Dirección de Operaciones</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.8rem;"><strong>Propósito:</strong> Coordinar la ejecución operacional de las soluciones.</p>
+          <ul class="proceso-list">
+            <li>Planeación operacional</li>
+            <li>Instalación</li>
+            <li>Puesta en funcionamiento</li>
+            <li>Mantenimiento</li>
+            <li>Control operacional</li>
+          </ul>
+        </div>
+        <div class="proceso-card">
+          <h4>🚀 Dirección de Innovación y Desarrollo de Negocios</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.8rem;"><strong>Propósito:</strong> Identificar oportunidades para crear nuevas soluciones.</p>
+          <ul class="proceso-list">
+            <li>I+D</li>
+            <li>Nuevos productos</li>
+            <li>Alianzas</li>
+            <li>Escalabilidad</li>
+            <li>Inteligencia de negocios</li>
+          </ul>
         </div>
       </div>
     </div>
+  </section>
 
+  <!-- 10. Políticas Corporativas (COMPLETAS - 10 políticas) -->
+  <section class="section-padding">
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <span class="badge badge-orange">Sección 10 · NIV-POL-001 al 010</span>
+      <h2 style="font-size: 2.5rem; margin-top: 0.5rem;">Políticas Corporativas</h2>
+      <p style="color: var(--text-muted); max-width: 750px; margin: 0.5rem auto;">
+        Las 10 políticas que orientan la operación y el gobierno de NIVELIA S.A.S.
+      </p>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <span>NIV-POL-001 | Gobierno Corporativo, Ética e Integridad</span>
+        <span class="accordion-icon">▼</span>
+      </div>
+      <div class="accordion-content">
+        <p><strong>Objetivo:</strong> Establecer principios de integridad, transparencia, responsabilidad y comportamiento ético que orienten la toma de decisiones y las relaciones de NIVELIA S.A.S.</p>
+        <p style="margin-top: 0.5rem;"><strong>Alcance:</strong> Aplica a accionistas, Junta Directiva, directivos, trabajadores, contratistas, proveedores y terceros.</p>
+        <p style="margin-top: 0.5rem;"><strong>Principios:</strong> Integridad; transparencia; responsabilidad; imparcialidad; confidencialidad; legalidad; respeto.</p>
+        <p style="margin-top: 0.5rem;"><strong>Compromisos:</strong> Prevenir conflictos de interés; rechazar prácticas de corrupción; proteger recursos; mantener información veraz; promover decisiones responsables; establecer canales de reporte.</p>
+        <p style="margin-top: 0.5rem;"><strong>Indicadores:</strong> Incidentes éticos; reportes gestionados; hallazgos; porcentaje de personal capacitado.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <span>NIV-POL-002 | Calidad y Excelencia Operacional</span>
+        <span class="accordion-icon">▼</span>
+      </div>
+      <div class="accordion-content">
+        <p><strong>Objetivo:</strong> Garantizar que productos, servicios y procesos cumplan requisitos técnicos, contractuales, funcionales y de calidad establecidos.</p>
+        <p style="margin-top: 0.5rem;"><strong>Alcance:</strong> Todos los procesos y áreas de NIVELIA.</p>
+        <p style="margin-top: 0.5rem;"><strong>Principios:</strong> Calidad; prevención; enfoque al cliente; trazabilidad; mejora continua; cumplimiento.</p>
+        <p style="margin-top: 0.5rem;"><strong>Compromisos:</strong> Controlar procesos; verificar entregables; controlar materiales; gestionar no conformidades; implementar acciones correctivas; evaluar satisfacción.</p>
+        <p style="margin-top: 0.5rem;"><strong>Indicadores:</strong> Entregables aprobados; reprocesos; no conformidades; satisfacción del cliente; cumplimiento de requisitos.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <span>NIV-POL-003 | Seguridad, Salud en el Trabajo y Seguridad Operacional</span>
+        <span class="accordion-icon">▼</span>
+      </div>
+      <div class="accordion-content">
+        <p><strong>Objetivo:</strong> Prevenir accidentes, lesiones, enfermedades laborales y condiciones inseguras asociadas a las actividades de NIVELIA.</p>
+        <p style="margin-top: 0.5rem;"><strong>Alcance:</strong> Todos los trabajadores, contratistas y actividades administrativas, técnicas, operativas, de instalación y mantenimiento.</p>
+        <p style="margin-top: 0.5rem;"><strong>Compromisos:</strong> Identificar peligros; evaluar riesgos; implementar controles; capacitar; usar EPP; reportar incidentes; preparar emergencias.</p>
+        <p style="margin-top: 0.5rem;"><strong>Indicadores:</strong> Accidentes; incidentes; inspecciones; capacitación; acciones correctivas.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <span>NIV-POL-004 | Innovación, Investigación y Desarrollo</span>
+        <span class="accordion-icon">▼</span>
+      </div>
+      <div class="accordion-content">
+        <p><strong>Objetivo:</strong> Promover la investigación, experimentación y desarrollo de soluciones que fortalezcan la competitividad de NIVELIA.</p>
+        <p style="margin-top: 0.5rem;"><strong>Alcance:</strong> Iniciativas de innovación, desarrollo de productos, prototipos, tecnologías y nuevos modelos de negocio.</p>
+        <p style="margin-top: 0.5rem;"><strong>Principios:</strong> Creatividad; experimentación; viabilidad; colaboración; escalabilidad; protección intelectual.</p>
+        <p style="margin-top: 0.5rem;"><strong>Compromisos:</strong> Evaluar tecnologías; desarrollar prototipos; promover I+D; establecer alianzas; proteger propiedad intelectual; medir resultados.</p>
+        <p style="margin-top: 0.5rem;"><strong>Indicadores:</strong> Iniciativas; prototipos; nuevos productos; tecnologías evaluadas; soluciones escaladas.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <span>NIV-POL-005 | Sostenibilidad y Gestión Ambiental</span>
+        <span class="accordion-icon">▼</span>
+      </div>
+      <div class="accordion-content">
+        <p><strong>Objetivo:</strong> Integrar criterios ambientales y de sostenibilidad en las operaciones y soluciones de NIVELIA.</p>
+        <p style="margin-top: 0.5rem;"><strong>Alcance:</strong> Todas las áreas, procesos, instalaciones, operaciones y soluciones de la organización.</p>
+        <p style="margin-top: 0.5rem;"><strong>Principios:</strong> Prevención; eficiencia; responsabilidad ambiental; economía circular; uso racional de recursos.</p>
+        <p style="margin-top: 0.5rem;"><strong>Compromisos:</strong> Prevenir impactos; gestionar residuos; optimizar agua y energía; promover materiales sostenibles; cumplir requisitos ambientales.</p>
+        <p style="margin-top: 0.5rem;"><strong>Indicadores:</strong> Consumo de agua; consumo energético; residuos; aprovechamiento; cumplimiento ambiental.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <span>NIV-POL-006 | Seguridad de la Información, Ciberseguridad y Propiedad Intelectual</span>
+        <span class="accordion-icon">▼</span>
+      </div>
+      <div class="accordion-content">
+        <p><strong>Objetivo:</strong> Proteger información y activos tecnológicos de NIVELIA frente a pérdida, alteración, acceso no autorizado o divulgación indebida.</p>
+        <p style="margin-top: 0.5rem;"><strong>Alcance:</strong> Información física, digital, sistemas, dispositivos, software, diseños y activos tecnológicos.</p>
+        <p style="margin-top: 0.5rem;"><strong>Principios:</strong> Confidencialidad; integridad; disponibilidad; trazabilidad; mínimo privilegio.</p>
+        <p style="margin-top: 0.5rem;"><strong>Compromisos:</strong> Controlar accesos; proteger dispositivos; realizar copias de seguridad; gestionar incidentes; proteger diseños y software.</p>
+        <p style="margin-top: 0.5rem;"><strong>Indicadores:</strong> Incidentes; usuarios capacitados; cumplimiento de controles; vulnerabilidades gestionadas.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <span>NIV-POL-007 | Gestión del Talento Humano</span>
+        <span class="accordion-icon">▼</span>
+      </div>
+      <div class="accordion-content">
+        <p><strong>Objetivo:</strong> Desarrollar una gestión del talento basada en competencias, respeto, igualdad de oportunidades, bienestar y desarrollo profesional.</p>
+        <p style="margin-top: 0.5rem;"><strong>Alcance:</strong> Todos los trabajadores y procesos de gestión humana.</p>
+        <p style="margin-top: 0.5rem;"><strong>Principios:</strong> Igualdad; respeto; mérito; inclusión; confidencialidad; desarrollo.</p>
+        <p style="margin-top: 0.5rem;"><strong>Compromisos:</strong> Selección basada en competencias; igualdad de oportunidades; capacitación; evaluación; bienestar; prevención de discriminación.</p>
+        <p style="margin-top: 0.5rem;"><strong>Indicadores:</strong> Rotación; ausentismo; capacitación; desempeño; cobertura de vacantes.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <span>NIV-POL-008 | Gestión de Riesgos y Mejora Continua</span>
+        <span class="accordion-icon">▼</span>
+      </div>
+      <div class="accordion-content">
+        <p><strong>Objetivo:</strong> Identificar, evaluar, tratar y monitorear riesgos que puedan afectar los objetivos empresariales.</p>
+        <p style="margin-top: 0.5rem;"><strong>Alcance:</strong> Todos los procesos y niveles de NIVELIA.</p>
+        <p style="margin-top: 0.5rem;"><strong>Principios:</strong> Prevención; proporcionalidad; trazabilidad; responsabilidad; mejora continua.</p>
+        <p style="margin-top: 0.5rem;"><strong>Compromisos:</strong> Identificar riesgos; evaluar impacto; establecer controles; asignar responsables; monitorear y mejorar.</p>
+        <p style="margin-top: 0.5rem;"><strong>Indicadores:</strong> Riesgos críticos abiertos; acciones vencidas; incidentes; cumplimiento de controles.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <span>NIV-POL-009 | Relacionamiento con Clientes y Partes Interesadas</span>
+        <span class="accordion-icon">▼</span>
+      </div>
+      <div class="accordion-content">
+        <p><strong>Objetivo:</strong> Establecer criterios para relaciones profesionales, transparentes y responsables con clientes y partes interesadas.</p>
+        <p style="margin-top: 0.5rem;"><strong>Alcance:</strong> Clientes, usuarios, proveedores, comunidades, aliados, entidades públicas y privadas.</p>
+        <p style="margin-top: 0.5rem;"><strong>Principios:</strong> Transparencia; respeto; oportunidad; confidencialidad; responsabilidad.</p>
+        <p style="margin-top: 0.5rem;"><strong>Compromisos:</strong> Proporcionar información clara; cumplir compromisos; atender solicitudes; gestionar reclamaciones; medir satisfacción.</p>
+        <p style="margin-top: 0.5rem;"><strong>Indicadores:</strong> Satisfacción; tiempo de respuesta; reclamaciones; cumplimiento de compromisos.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <span>NIV-POL-010 | Compras, Proveedores y Contratistas</span>
+        <span class="accordion-icon">▼</span>
+      </div>
+      <div class="accordion-content">
+        <p><strong>Objetivo:</strong> Garantizar compras y contratación de proveedores bajo criterios de calidad, costo, capacidad, cumplimiento, seguridad y transparencia.</p>
+        <p style="margin-top: 0.5rem;"><strong>Alcance:</strong> Compras de bienes y servicios, proveedores, contratistas y servicios tercerizados.</p>
+        <p style="margin-top: 0.5rem;"><strong>Principios:</strong> Transparencia; objetividad; calidad; eficiencia; trazabilidad; cumplimiento.</p>
+        <p style="margin-top: 0.5rem;"><strong>Compromisos:</strong> Comparar ofertas; verificar requisitos; evaluar proveedores; realizar seguimiento contractual; gestionar desempeño.</p>
+      </div>
+    </div>
   </section>
 
   <footer>

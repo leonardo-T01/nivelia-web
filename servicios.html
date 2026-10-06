@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios y Procesos | NIVELIA S.A.S.</title>
+  <title>Servicios, Procesos y Soluciones | NIVELIA S.A.S.</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header class="navbar">
     <a href="index.html" class="logo-container">
-      <img src="assets/images/logo-nivelia.png" alt="NIVELIA S.A.S." class="logo-img">
+      <img src="assets/images/logo-nivelia.png" alt="NIVELIA S.A.S." class="logo-img" onerror="this.style.display='none'">
       <span class="logo-text">NIVELIA<span>.</span></span>
     </a>
     <nav>
@@ -18,6 +18,7 @@
         <li><a href="index.html">Inicio</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="servicios.html" class="active">Servicios y Soluciones</a></li>
+        <li><a href="cargos.html">Cargos</a></li>
         <li><a href="documentos.html">Documentación</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
@@ -25,180 +26,232 @@
     <a href="contacto.html" class="btn-primary">Cotizar Proyecto</a>
   </header>
 
-  <section style="padding: 10rem 8% 3rem;">
-    <div style="text-align: center; margin-bottom: 3rem;">
-      <span class="badge badge-orange">Mapa de Procesos Corporativos</span>
-      <h1 style="font-size: 3rem; margin-top: 0.5rem;">6. Diagrama de Flujo y Procesos de la Empresa</h1>
-    </div>
+  <section style="padding: 10rem 8% 3rem; text-align: center;">
+    <span class="badge badge-orange">Sección 6 · Mapa de Procesos</span>
+    <h1 style="font-size: 3rem; margin-top: 0.5rem;">Diagrama de Flujo y Procesos</h1>
+    <p style="color: var(--text-muted); max-width: 850px; margin: 1rem auto 0;">
+      Interacción de los procesos de NIVELIA S.A.S., desde la identificación de una necesidad hasta la implementación, operación y mejora.
+    </p>
+  </section>
 
-    <!-- Diagrama del Flujo General de Procesos del Documento -->
+  <!-- 6.1 Diagrama General -->
+  <section class="section-padding">
     <div class="diagram-viewer">
       <h3 style="color: var(--primary-cyan); margin-bottom: 1rem;">6.1 Diagrama General de Interacción de Procesos</h3>
-      <img src="assets/images/mapa-procesos.jpg" alt="Mapa de Procesos NIVELIA S.A.S." class="diagram-img">
+      <img src="assets/images/mapa-procesos.jpg" alt="Mapa de Procesos NIVELIA S.A.S." class="diagram-img" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>📊 Diagrama de procesos — Consulte la sección 6.1 del documento NIV-ORG-001</div>'">
+    </div>
+  </section>
+
+  <!-- 6.2 Procesos por Área (NUEVO - Cards en lugar de Tabla) -->
+  <section class="section-padding">
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <span class="badge badge-cyan">6.2 Procesos Involucrados</span>
+      <h2 style="font-size: 2.5rem; margin-top: 0.5rem;">Procesos por Área Funcional</h2>
     </div>
 
-    <!-- Pestañas Interactivas por Dirección Técnica -->
-    <div class="tabs-container" style="margin-top: 4rem;">
-      <div class="tabs-header">
-        <button class="tab-btn active" data-tab="ing-civil">Ingeniería Civil</button>
-        <button class="tab-btn" data-tab="ti-innovacion">Tecnología e IoT</button>
-        <button class="tab-btn" data-tab="sostenibilidad">Sostenibilidad</button>
-        <button class="tab-btn" data-tab="operaciones">Operaciones</button>
-        <button class="tab-btn" data-tab="comercial">Comercial y Licitaciones</button>
+    <div class="grid-cards">
+      <div class="proceso-card">
+        <h4>🏗️ Ingeniería Civil e Infraestructura</h4>
+        <ul class="proceso-list">
+          <li>Estudios y diagnóstico de infraestructura</li>
+          <li>Diseño de infraestructura</li>
+          <li>Ingeniería hidráulica y gestión del agua</li>
+          <li>Supervisión técnica</li>
+          <li>Control técnico y calidad</li>
+        </ul>
       </div>
-
-      <!-- Contenido Tab 1 -->
-      <div id="ing-civil" class="tab-content active">
-        <div class="card">
-          <h2 style="color: var(--primary-cyan);">Dirección de Ingeniería Civil e Infraestructura</h2>
-          <p style="margin-top: 0.5rem; color: var(--text-muted);">
-            Procesos involucrados: Estudios y diagnóstico, diseño estructural, ingeniería hidráulica, supervisión técnica y control de calidad.
-          </p>
-          <div style="margin-top: 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
-            <div><strong>Cargos Asociados:</strong> Ingeniero Civil, Hidráulico, Estructural, Arquitecto, Topógrafo.</div>
-            <div><strong>Indicador de Gestión:</strong> Cumplimiento de entregables e índice de no conformidades.</div>
-          </div>
-        </div>
+      <div class="proceso-card">
+        <h4>💻 Tecnología e Innovación</h4>
+        <ul class="proceso-list">
+          <li>Desarrollo de software</li>
+          <li>Automatización y control</li>
+          <li>Gestión de sensores e IoT</li>
+          <li>Integración de sistemas</li>
+          <li>Seguridad y soporte tecnológico</li>
+        </ul>
       </div>
-
-      <!-- Contenido Tab 2 -->
-      <div id="ti-innovacion" class="tab-content">
-        <div class="card">
-          <h2 style="color: var(--primary-cyan);">Dirección de Tecnología e Innovación</h2>
-          <p style="margin-top: 0.5rem; color: var(--text-muted);">
-            Procesos involucrados: Desarrollo de software, automatización, gestión de sensores IoT, integración de sistemas y ciberseguridad.
-          </p>
-          <div style="margin-top: 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
-            <div><strong>Cargos Asociados:</strong> Ingeniero de Sistemas, Electrónico, Mecatrónico, Desarrollador, Especialista IoT.</div>
-            <div><strong>Indicador de Gestión:</strong> Disponibilidad del sistema y tiempo de respuesta ante incidentes.</div>
-          </div>
-        </div>
+      <div class="proceso-card">
+        <h4>📈 Comercial y Mercado</h4>
+        <ul class="proceso-list">
+          <li>Investigación de mercado</li>
+          <li>Gestión comercial</li>
+          <li>Marketing y posicionamiento</li>
+          <li>Licitaciones y gestión contractual</li>
+          <li>Gestión de clientes y servicio</li>
+        </ul>
       </div>
-
-      <!-- Contenido Tab 3 -->
-      <div id="sostenibilidad" class="tab-content">
-        <div class="card">
-          <h2 style="color: var(--primary-cyan);">Dirección de Sostenibilidad y Gestión Ambiental</h2>
-          <p style="margin-top: 0.5rem; color: var(--text-muted);">
-            Procesos involucrados: Evaluación de impacto ambiental, gestión hídrica (SUDS), gestión de residuos y eficiencia energética.
-          </p>
-        </div>
+      <div class="proceso-card">
+        <h4>💼 Administrativa y Financiera</h4>
+        <ul class="proceso-list">
+          <li>Gestión financiera</li>
+          <li>Gestión contable</li>
+          <li>Gestión del talento humano</li>
+          <li>Compras y gestión de proveedores</li>
+          <li>Gestión jurídica y documental</li>
+        </ul>
       </div>
-
-      <!-- Contenido Tab 4 -->
-      <div id="operaciones" class="tab-content">
-        <div class="card">
-          <h2 style="color: var(--primary-cyan);">Dirección de Operaciones</h2>
-          <p style="margin-top: 0.5rem; color: var(--text-muted);">
-            Procesos involucrados: Planeación operacional, instalación y montaje, puesta en funcionamiento, mantenimiento y logística de almacén.
-          </p>
-        </div>
+      <div class="proceso-card">
+        <h4>⚙️ Operaciones</h4>
+        <ul class="proceso-list">
+          <li>Planeación operacional</li>
+          <li>Instalación y montaje</li>
+          <li>Puesta en funcionamiento</li>
+          <li>Operación y mantenimiento</li>
+          <li>Control operacional</li>
+        </ul>
       </div>
-
-      <!-- Contenido Tab 5 -->
-      <div id="comercial" class="tab-content">
-        <div class="card">
-          <h2 style="color: var(--primary-cyan);">Dirección Comercial y de Mercado</h2>
-          <p style="margin-top: 0.5rem; color: var(--text-muted);">
-            Procesos involucrados: Investigación de mercado, licitaciones públicas (B2G), gestión contractual y marketing corporativo.
-          </p>
-        </div>
+      <div class="proceso-card">
+        <h4>🌿 Sostenibilidad y Gestión Ambiental</h4>
+        <ul class="proceso-list">
+          <li>Gestión ambiental</li>
+          <li>Gestión hídrica</li>
+          <li>Gestión de residuos</li>
+          <li>Gestión energética</li>
+          <li>Evaluación y seguimiento de sostenibilidad</li>
+        </ul>
       </div>
-    </div>
-
-    <!-- Indicadores del Sistema de Gestión (Sección 11.2) -->
-    <div style="margin-top: 5rem;">
-      <h2 style="color: var(--primary-cyan); text-align: center;">11.2 Cuadro de Indicadores por Proceso</h2>
-      
-      <div class="table-responsive">
-        <table>
-          <thead>
-            <tr>
-              <th>Área / Proceso</th>
-              <th>Indicador Clave de Desempeño (KPI)</th>
-              <th>Propósito de Control</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Ingeniería Civil e Infraestructura</td>
-              <td>Cumplimiento de Entregables</td>
-              <td>Garantizar plazos y calidad en proyectos físicos.</td>
-            </tr>
-            <tr>
-              <td>Tecnología e Innovación</td>
-              <td>Disponibilidad de Sistemas IoT</td>
-              <td>Asegurar continuidad de telemetría y plataformas.</td>
-            </tr>
-            <tr>
-              <td>Comercial y Mercado</td>
-              <td>Conversión de Oportunidades / Licitaciones</td>
-              <td>Evaluar adjudicación de proyectos B2G y B2B.</td>
-            </tr>
-            <tr>
-              <td>Gestión Financiera</td>
-              <td>Cumplimiento Presupuestal</td>
-              <td>Asegurar ejecución económica transparente.</td>
-            </tr>
-            <tr>
-              <td>Operaciones</td>
-              <td>Cumplimiento Operacional y Mantenimiento</td>
-              <td>Efectividad en montaje y resolución en campo.</td>
-            </tr>
-            <tr>
-              <td>Sostenibilidad y Gestión Ambiental</td>
-              <td>Cumplimiento Ambiental</td>
-              <td>Asegurar mitiga de impactos e indicadores ESG.</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="proceso-card">
+        <h4>🚀 Innovación y Desarrollo de Negocios</h4>
+        <ul class="proceso-list">
+          <li>Investigación y desarrollo</li>
+          <li>Desarrollo de nuevos productos</li>
+          <li>Prototipado y validación</li>
+          <li>Alianzas estratégicas</li>
+          <li>Inteligencia de negocios y escalabilidad</li>
+        </ul>
+      </div>
+      <div class="proceso-card">
+        <h4>🔍 Auditoría Interna</h4>
+        <ul class="proceso-list">
+          <li>Auditoría financiera</li>
+          <li>Auditoría operacional</li>
+          <li>Auditoría de calidad</li>
+          <li>Gestión y evaluación de riesgos</li>
+          <li>Verificación de cumplimiento</li>
+        </ul>
       </div>
     </div>
+  </section>
 
-    <!-- Matriz de Vinculación y Tercerización (Sección 9 del Documento) -->
-    <div style="margin-top: 5rem;">
-      <h2 style="color: var(--primary-cyan); text-align: center;">9. Matriz de Vinculación y Tercerización</h2>
-      
-      <div class="table-responsive">
-        <table>
-          <thead>
-            <tr>
-              <th>Cargo / Servicio</th>
-              <th>Área Responsable</th>
-              <th>Modalidad Propuesta</th>
-              <th>Justificación Técnica</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Gerente General / Direcciones</td>
-              <td>Estratégica / Directiva</td>
-              <td><span class="badge badge-cyan">Laboral Indefinido</span></td>
-              <td>Dirección y continuidad estratégica permanente.</td>
-            </tr>
-            <tr>
-              <td>Especialistas e Ingenieros</td>
-              <td>Técnica / Profesional</td>
-              <td><span class="badge badge-cyan">Laboral Indefinido</span></td>
-              <td>Capacidad técnica propia y recurrente.</td>
-            </tr>
-            <tr>
-              <td>Residente / Supervisor de Campo</td>
-              <td>Operaciones</td>
-              <td><span class="badge badge-orange">Laboral Obra / Labor</span></td>
-              <td>Asociado a la ejecución de contratos específicos.</td>
-            </tr>
-            <tr>
-              <td>Servicios de Vigilancia y Aseo</td>
-              <td>Administrativa</td>
-              <td><span class="badge badge-violet">Servicio Tercerizado</span></td>
-              <td>Soporte especializado no misional.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+  <!-- 11.2 Dashboard de Indicadores (KPI) - Diseño moderno -->
+  <section class="section-padding">
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <span class="badge badge-violet">Sección 11.2 · Sistema de Gestión</span>
+      <h2 style="font-size: 2.5rem; margin-top: 0.5rem;">Cuadro de Indicadores por Proceso</h2>
     </div>
 
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">Ingeniería Civil e Infraestructura</div>
+        <div class="kpi-value">Cumplimiento de Entregables</div>
+        <div class="kpi-bar"><div class="kpi-bar-fill" style="width: 92%;"></div></div>
+        <div class="kpi-desc">Garantizar plazos y calidad en proyectos físicos.</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Tecnología e Innovación</div>
+        <div class="kpi-value">Disponibilidad de Sistemas</div>
+        <div class="kpi-bar"><div class="kpi-bar-fill" style="width: 98%;"></div></div>
+        <div class="kpi-desc">Asegurar continuidad de telemetría y plataformas.</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Comercial y Mercado</div>
+        <div class="kpi-value">Conversión de Oportunidades</div>
+        <div class="kpi-bar"><div class="kpi-bar-fill" style="width: 45%;"></div></div>
+        <div class="kpi-desc">Evaluar adjudicación de proyectos B2G y B2B.</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Gestión Financiera</div>
+        <div class="kpi-value">Cumplimiento Presupuestal</div>
+        <div class="kpi-bar"><div class="kpi-bar-fill" style="width: 88%;"></div></div>
+        <div class="kpi-desc">Asegurar ejecución económica transparente.</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Operaciones</div>
+        <div class="kpi-value">Cumplimiento Operacional</div>
+        <div class="kpi-bar"><div class="kpi-bar-fill" style="width: 90%;"></div></div>
+        <div class="kpi-desc">Efectividad en montaje y resolución en campo.</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Sostenibilidad</div>
+        <div class="kpi-value">Cumplimiento Ambiental</div>
+        <div class="kpi-bar"><div class="kpi-bar-fill" style="width: 85%;"></div></div>
+        <div class="kpi-desc">Mitigar impactos e indicadores ESG.</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Talento Humano</div>
+        <div class="kpi-value">Rotación / Capacitación</div>
+        <div class="kpi-bar"><div class="kpi-bar-fill" style="width: 78%;"></div></div>
+        <div class="kpi-desc">Desarrollo y bienestar del equipo.</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Auditoría Interna</div>
+        <div class="kpi-value">Acciones Cerradas</div>
+        <div class="kpi-bar"><div class="kpi-bar-fill" style="width: 95%;"></div></div>
+        <div class="kpi-desc">Cierre efectivo de hallazgos y acciones.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Matriz de Vinculación -->
+  <section class="section-padding">
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <span class="badge badge-orange">Sección 9 · Talento</span>
+      <h2 style="font-size: 2.5rem; margin-top: 0.5rem;">Matriz de Vinculación y Tercerización</h2>
+    </div>
+
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>Cargo / Servicio</th>
+            <th>Área Responsable</th>
+            <th>Modalidad Propuesta</th>
+            <th>Justificación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gerente General / Directores</td>
+            <td>Estratégica / Directiva</td>
+            <td><span class="badge badge-cyan">Laboral Indefinido</span></td>
+            <td>Dirección y continuidad estratégica permanente.</td>
+          </tr>
+          <tr>
+            <td>Ingenieros y Especialistas</td>
+            <td>Técnica / Profesional</td>
+            <td><span class="badge badge-cyan">Laboral Indefinido</span></td>
+            <td>Capacidad técnica propia y recurrente.</td>
+          </tr>
+          <tr>
+            <td>Residente de Obra / Supervisor</td>
+            <td>Operaciones</td>
+            <td><span class="badge badge-orange">Laboral Obra / Labor</span></td>
+            <td>Asociado a la ejecución de contratos específicos.</td>
+          </tr>
+          <tr>
+            <td>Técnicos de Instalación</td>
+            <td>Operaciones</td>
+            <td><span class="badge badge-orange">Laboral según necesidad</span></td>
+            <td>Instalación asociada a obra o labor.</td>
+          </tr>
+          <tr>
+            <td>Servicios de Vigilancia</td>
+            <td>Administrativa</td>
+            <td><span class="badge badge-violet">Servicio Tercerizado</span></td>
+            <td>Servicio de seguridad especializado.</td>
+          </tr>
+          <tr>
+            <td>Mantenimiento Locativo</td>
+            <td>Administrativa</td>
+            <td><span class="badge badge-violet">Servicio Tercerizado</span></td>
+            <td>Actividad especializada no misional.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 1rem; text-align: center;">
+      Para la matriz completa por cargo, consulte el documento <strong>NIV-ORG-001, Sección 9.1</strong>.
+    </p>
   </section>
 
   <footer>

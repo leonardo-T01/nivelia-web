@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Centro de Documentación y Transparencia | NIVELIA S.A.S.</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- CORREGIDO: style.css en lugar de styles.css -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -35,7 +36,7 @@
     </p>
   </section>
 
-  <!-- Categoría 1: Documentos Oficiales de Descarga Directa -->
+  <!-- Documentos Oficiales de Descarga Directa -->
   <section style="padding: 2rem 8%;">
     <h2 style="color: var(--primary-cyan); border-bottom: 1px solid var(--bg-card-border); padding-bottom: 0.8rem; margin-bottom: 2rem;">
       📄 Documentos e Informes Públicos
@@ -43,9 +44,21 @@
 
     <div class="grid-cards">
       
-      <!-- Doc 1: Reglamento Interno de Trabajo (.pdf) -->
+      <!-- Doc 1: Parámetros Organizacionales (NIV-ORG-001) - AGREGADO -->
       <div class="card">
-        <span style="background: rgba(255,107,0,0.1); color: var(--primary-orange); padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.8rem; font-weight: 700;">RIT-NIV-001</span>
+        <span class="badge badge-cyan">NIV-ORG-001</span>
+        <h3 style="margin-top: 0.8rem;">Parámetros Organizacionales de la Empresa</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0.5rem 0 1.5rem;">
+          Documento maestro que establece la estructura, direccionamiento estratégico, políticas, procesos y perfiles de cargo de NIVELIA S.A.S.
+        </p>
+        <div style="display: flex; gap: 0.8rem;">
+          <a href="assets/docs/NIV-ORG-001_Parametros_Organizacionales.pdf" download class="btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">Descargar PDF</a>
+        </div>
+      </div>
+
+      <!-- Doc 2: Reglamento Interno de Trabajo (.pdf) -->
+      <div class="card">
+        <span class="badge badge-orange">RIT-NIV-001</span>
         <h3 style="margin-top: 0.8rem;">Reglamento Interno de Trabajo</h3>
         <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0.5rem 0 1.5rem;">
           Disposiciones generales, jornadas, derechos, obligaciones, seguridad e higiene laboral para colaboradores.
@@ -55,9 +68,9 @@
         </div>
       </div>
 
-      <!-- Doc 2: Matriz RACI (.xls) -->
+      <!-- Doc 3: Matriz RACI (.xls) -->
       <div class="card">
-        <span style="background: rgba(127,0,255,0.1); color: var(--primary-violet); padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.8rem; font-weight: 700;">NIV-MAT-002</span>
+        <span class="badge badge-violet">NIV-ORG-002</span>
         <h3 style="margin-top: 0.8rem;">Matriz RACI de Procesos</h3>
         <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0.5rem 0 1.5rem;">
           Asignación sistemática de responsabilidades (Aprobador, Responsable, Consultado, Informado) por WBS.
@@ -67,9 +80,21 @@
         </div>
       </div>
 
-      <!-- Doc 3: PM Canvas (.pdf) -->
+      <!-- Doc 4: Modelo de Nómina y Costos Laborales (NIV-RH-002) - AGREGADO -->
       <div class="card">
-        <span style="background: rgba(0,242,254,0.1); color: var(--primary-cyan); padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.8rem; font-weight: 700;">PROYECTO-PMC</span>
+        <span class="badge badge-cyan">NIV-RH-002</span>
+        <h3 style="margin-top: 0.8rem;">Modelo de Nómina y Costos Laborales 2026</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0.5rem 0 1.5rem;">
+          Herramienta de estructuración, liquidación, control y proyección de costos laborales asociados a los cargos de la empresa.
+        </p>
+        <div style="display: flex; gap: 0.8rem;">
+          <a href="assets/docs/NIVELIA_NOMINA.xlsx" download class="btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">Descargar Excel (.xlsx)</a>
+        </div>
+      </div>
+
+      <!-- Doc 5: PM Canvas (.pdf) -->
+      <div class="card">
+        <span class="badge badge-orange">PROYECTO-PMC</span>
         <h3 style="margin-top: 0.8rem;">PM Canvas - Plataformas Antiinundación</h3>
         <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0.5rem 0 1.5rem;">
           Matriz de diseño de proyecto: justificativos, arquitectura de subsistemas, riesgos y requisitos SMART.
@@ -79,9 +104,9 @@
         </div>
       </div>
 
-      <!-- Doc 4: PESTEL (.pptx) -->
+      <!-- Doc 6: PESTEL (.pptx) -->
       <div class="card">
-        <span style="background: rgba(255,107,0,0.1); color: var(--primary-orange); padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.8rem; font-weight: 700;">PROYECTO-PESTEL</span>
+        <span class="badge badge-violet">PROYECTO-PESTEL</span>
         <h3 style="margin-top: 0.8rem;">Análisis PESTEL - Plataformas Antiinundación</h3>
         <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0.5rem 0 1.5rem;">
           Análisis del entorno político, económico, social, tecnológico, ecológico y legal para proyectos urbanos.
@@ -91,34 +116,6 @@
         </div>
       </div>
 
-    </div>
-  </section>
-
-  <!-- Categoría 2: Portal Restringido / Intranet Corporativa -->
-  <section style="padding: 4rem 8%;">
-    <div class="card" style="border: 1px solid var(--primary-orange); background: rgba(255, 107, 0, 0.03);">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
-        <div>
-          <span style="color: var(--primary-orange); font-weight: 700; font-size: 0.85rem;">🔒 ACCESO RESTRINGIDO</span>
-          <h2 style="margin-top: 0.5rem;">Intranet y Documentos Confidenciales</h2>
-          <p style="color: var(--text-muted); margin-top: 1rem; font-size: 0.95rem;">
-            Por políticas de confidencialidad financiera y protección de datos personales (Ley 1581 de 2012), los módulos de <strong>Nómina de Planta (`NIVELIA NOMINA.xlsx`)</strong> y <strong>Minutas Contractuales (`NIV-RH-003`)</strong> están reservados exclusivamente para el personal directivo, auditores y talento humano autorizados.
-          </p>
-        </div>
-
-        <div style="background: var(--bg-card); padding: 2rem; border-radius: 12px; border: 1px solid var(--bg-card-border);">
-          <h4 style="margin-bottom: 1rem; color: #fff;">Ingreso a Portal Corporativo</h4>
-          <form>
-            <div style="margin-bottom: 1rem;">
-              <input type="email" placeholder="Correo Corporativo (@nivelia.com)" required style="width: 100%; padding: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid var(--bg-card-border); border-radius: 6px; color: #fff;">
-            </div>
-            <div style="margin-bottom: 1.2rem;">
-              <input type="password" placeholder="Contraseña de Dominio" required style="width: 100%; padding: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid var(--bg-card-border); border-radius: 6px; color: #fff;">
-            </div>
-            <button type="submit" class="btn-primary" style="width: 100%;">Iniciar Sesión Segura</button>
-          </form>
-        </div>
-      </div>
     </div>
   </section>
 

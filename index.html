@@ -10,7 +10,7 @@
 
   <header class="navbar">
     <a href="index.html" class="logo-container">
-      <img src="assets/images/logo-nivelia.png" alt="NIVELIA S.A.S." class="logo-img">
+      <img src="assets/images/logo-nivelia.png" alt="NIVELIA S.A.S." class="logo-img" onerror="this.style.display='none'">
       <span class="logo-text">NIVELIA<span>.</span></span>
     </a>
     <nav>
@@ -18,6 +18,7 @@
         <li><a href="index.html" class="active">Inicio</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="servicios.html">Servicios y Soluciones</a></li>
+        <li><a href="cargos.html">Cargos</a></li>
         <li><a href="documentos.html">Documentación</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
@@ -25,7 +26,7 @@
     <a href="contacto.html" class="btn-primary">Cotizar Proyecto</a>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section style="padding: 12rem 8% 5rem; text-align: center; background: radial-gradient(circle at center, rgba(0, 242, 254, 0.1) 0%, transparent 70%);">
     <span class="badge badge-cyan">Código Documental: NIV-ORG-001</span>
     <h1 style="font-size: 3.5rem; font-weight: 800; margin-top: 1rem; line-height: 1.2;">
@@ -35,14 +36,14 @@
     <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 850px; margin: 1.5rem auto 2.5rem;">
       NIVELIA S.A.S. es una organización permanente concebida para el diseño, desarrollo, integración, instalación y mantenimiento de soluciones tecnológicas para la transformación resiliente de las ciudades.
     </p>
-    <div style="display: flex; gap: 1rem; justify-content: center;">
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
       <a href="nosotros.html" class="btn-primary">Estructura Organizacional</a>
       <a href="#smart-cross" class="btn-secondary">Solución Smart Cross</a>
     </div>
   </section>
 
-  <!-- Datos de Información General de la Empresa (Sección 2 del Documento) -->
-  <section style="padding: 3rem 8%;">
+  <!-- Información General -->
+  <section class="section-padding">
     <div class="grid-cards">
       <div class="card">
         <span class="badge badge-cyan">Naturaleza Jurídica</span>
@@ -55,34 +56,73 @@
         <span class="badge badge-orange">Domicilio Principal</span>
         <h3 style="margin-top: 0.8rem;">Bogotá D.C., Colombia</h3>
         <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">
-          Centro operacional para la atención de contratos públicos (B2G) y privados (B2B) en Latinoamérica.
+          Centro operacional para contratos públicos (B2G) y privados (B2B) en Latinoamérica.
         </p>
       </div>
       <div class="card">
         <span class="badge badge-violet">Alcance Empresarial</span>
         <h3 style="margin-top: 0.8rem;">Plataforma Multi-Solución</h3>
         <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">
-          Capacidad organizacional permanente independiente de un único producto o proyecto específico.
+          Capacidad organizacional permanente independiente de un único producto o proyecto.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Proyecto Flagship: Smart Cross -->
-  <section id="smart-cross" style="padding: 4rem 8%;">
+  <!-- Valores (NUEVO) -->
+  <section class="section-padding">
+    <div style="text-align: center; margin-bottom: 1rem;">
+      <span class="badge badge-cyan">Sección 3.3</span>
+      <h2 style="font-size: 2.5rem; margin-top: 0.5rem;">Nuestros Valores</h2>
+    </div>
+    <div class="valores-grid">
+      <div class="valor-card">
+        <div class="valor-icon">💡</div>
+        <h4>Innovación</h4>
+        <p>Soluciones que responden a necesidades reales de las ciudades.</p>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">🌱</div>
+        <h4>Sostenibilidad</h4>
+        <p>Considerar impactos ambientales, sociales y económicos.</p>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">🛡️</div>
+        <h4>Seguridad</h4>
+        <p>Protección de trabajadores, usuarios, clientes y comunidades.</p>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">🤝</div>
+        <h4>Trabajo en Equipo</h4>
+        <p>Colaboración entre áreas y disciplinas.</p>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">⭐</div>
+        <h4>Excelencia</h4>
+        <p>Altos estándares de calidad, desempeño y confiabilidad.</p>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">🌍</div>
+        <h4>Compromiso Social</h4>
+        <p>Soluciones orientadas a beneficios para la sociedad.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Smart Cross -->
+  <section id="smart-cross" class="section-padding">
     <div style="text-align: center; margin-bottom: 3rem;">
-      <span class="badge badge-orange">Aplicación Concreta de Capacidad</span>
+      <span class="badge badge-orange">Portafolio · Sección 13.1</span>
       <h2 style="font-size: 2.5rem; margin-top: 0.5rem;">Smart Cross: Paso Peatonal Inteligente</h2>
       <p style="color: var(--text-muted); max-width: 750px; margin: 0.5rem auto;">
-        Plataforma peatonal elevada y automatizada integrada con sistemas de control, sensores e IoT para mitigar riesgos por inundación y encharcamiento en vías urbanas.
+        Plataforma peatonal elevada y automatizada integrada con sistemas de control, sensores e IoT para mitigar riesgos por inundación en vías urbanas.
       </p>
     </div>
 
-    <!-- Render/Diagrama de Smart Cross -->
     <div class="diagram-viewer">
-      <img src="assets/images/smart-cross-render.jpg" alt="Render Smart Cross" class="diagram-img">
+      <img src="assets/images/smart-cross-render.jpg" alt="Render Smart Cross" class="diagram-img" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>📊 Render Smart Cross — Consulte la sección 13.1 del documento NIV-ORG-001</div>'">
       <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">
-        Esquema conceptual y flujo de la solución Smart Cross desarrollada bajo la estructura de NIVELIA S.A.S.
+        Esquema conceptual de la solución Smart Cross desarrollada bajo la estructura de NIVELIA S.A.S.
       </p>
     </div>
   </section>
