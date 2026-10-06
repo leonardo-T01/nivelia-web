@@ -471,3 +471,17 @@ footer {
   .section-padding { padding: 3rem 5%; }
   .modal-content { padding: 1.5rem; }
 }
+
+/* Logo ajustado sin texto */
+.logo-img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(0, 242, 254, 0.5));
+}
+
+/* Navbar centrado cuando no hay botón */
+.navbar {
+  justify-content: space-between;
+  padding: 0.8rem 8%;
+}
